@@ -21,7 +21,7 @@ export function Navigation() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
             <Image
-              src="/gettashower-landing/Logo.svg"
+              src="/Logo.svg"
               alt="GettaShower Logo"
               width={36}
               height={36}

@@ -1,15 +1,15 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Configuración para GitHub Pages
+  // Configuración para dominio personalizado en GitHub Pages
   output: 'export',
   trailingSlash: true,
   images: {
     unoptimized: true
   },
-  // Configuración para GitHub Pages - TU REPO NO ES EL PRINCIPAL
-  basePath: '/gettashower-landing',
-  assetPrefix: '/gettashower-landing',
+  // Sin basePath para dominio personalizado
+  // basePath: '/gettashower-landing', // ← Removido para dominio personalizado
+  // assetPrefix: '/gettashower-landing', // ← Removido para dominio personalizado
 };
 
 export default nextConfig;
