@@ -82,7 +82,7 @@ export default function Vision() {
 
           <div className="relative rounded-3xl overflow-hidden shadow-2xl group cursor-pointer">
             <Image
-              src="/Vision.jpg"
+              src="/gettashower-landing/Vision.jpg"
               alt="Barcelona Urban Vision"
               width={1200}
               height={500}

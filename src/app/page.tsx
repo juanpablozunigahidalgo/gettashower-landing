@@ -43,7 +43,7 @@ export default function Home() {
 
               <div className="relative z-10 transform hover:scale-105 transition-transform duration-700 ease-out">
                 <Image
-                  src="/Single-Mobil.jpg" // Usa la imagen generada aquí
+                  src="/gettashower-landing/Single-Mobil.jpg" // Usa la imagen generada aquí
                   alt="GettaShower App Discovery Interface"
                   width={450}
                   height={900}
@@ -75,7 +75,7 @@ export default function Home() {
                 {/* Left: Mobile Mockup */}
                 <div className="flex-shrink-0">
                   <Image
-                    src="/mockup-iphone-3d.png"
+                    src="/gettashower-landing/mockup-iphone-3d.png"
                     alt="GettaShower Discovery Interface"
                     width={350}
                     height={700}
@@ -141,7 +141,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="rounded-3xl overflow-hidden shadow-2xl">
             <Image
-              src="/Barcelona-City.jpg"
+              src="/gettashower-landing/Barcelona-City.jpg"
               alt="Barcelona Urban Architecture"
               width={1200}
               height={400}
