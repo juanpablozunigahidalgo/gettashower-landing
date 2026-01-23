@@ -7,9 +7,9 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true
   },
-  // Configuración para GitHub Pages (sin basePath si es el repo principal)
-  // basePath: '/gettashower-landing', // Solo si el repo NO es el principal
-  // assetPrefix: '/gettashower-landing', // Solo si el repo NO es el principal
+  // Configuración para GitHub Pages - TU REPO NO ES EL PRINCIPAL
+  basePath: '/gettashower-landing',
+  assetPrefix: '/gettashower-landing',
 };
 
 export default nextConfig;
