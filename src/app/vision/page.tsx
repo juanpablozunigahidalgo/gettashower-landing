@@ -80,24 +80,19 @@ export default function Vision() {
             See the Vision
           </h2>
 
-          <div className="relative rounded-3xl overflow-hidden shadow-2xl group cursor-pointer">
-            <Image
-              src="/Vision.jpg"
-              alt="Barcelona Urban Vision"
-              width={1200}
-              height={500}
-              className="w-full h-[500px] object-cover"
-            />
-            {/* Video Play Overlay */}
-            <div className="absolute inset-0 bg-black/30 flex items-center justify-center group-hover:bg-black/40 transition-colors">
-              <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
-                <Play className="w-8 h-8 text-[#0066FF] ml-1" fill="currentColor" />
-              </div>
-            </div>
+          {/* YouTube Video Container */}
+          <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-black aspect-video">
+            <iframe
+              className="absolute top-0 left-0 w-full h-full"
+              src="https://www.youtube.com/embed/aYSAal_miC4"
+              title="Getta Shower Vision"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            ></iframe>
           </div>
 
-          <p className="text-center text-gray-500 mt-6">
-            A cinematic journey through Barcelona's transformation
+          <p className="text-center text-gray-500 mt-6 italic">
+            "Live the city, without limits." — Getta Shower Concept Pitch
           </p>
         </div>
       </section>

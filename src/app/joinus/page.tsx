@@ -161,7 +161,7 @@ export default function JoinUs() {
         <div className="max-w-5xl mx-auto px-6">
           <div className="rounded-3xl overflow-hidden shadow-2xl">
             <Image
-              src="/JoinUs.jpg"
+              src="/workspace.png"
               alt="Modern Workspace"
               width={1200}
               height={400}
