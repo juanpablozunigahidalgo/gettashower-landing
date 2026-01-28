@@ -34,9 +34,9 @@ export function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Contact</h4>
             <div className="space-y-3">
-              <a href="mailto:hello@gettashower.com" className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors">
+              <a href="mailto:info@gettashower.com" className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors">
                 <Mail className="w-4 h-4" />
-                <span className="text-sm">hello@gettashower.com</span>
+                <span className="text-sm">info@gettashower.com</span>
               </a>
               <a href="tel:+34931234567" className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors">
                 <Phone className="w-4 h-4" />
@@ -49,7 +49,7 @@ export function Footer() {
         {/* Bottom */}
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            © 2025 GettaShower. All rights reserved.
+            © 2026 GettaShower. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</a>

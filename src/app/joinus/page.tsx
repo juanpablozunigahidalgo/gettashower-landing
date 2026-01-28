@@ -197,11 +197,11 @@ export default function JoinUs() {
             If this resonates, reach out. Tell us who you are, what you bring, and why you want to build this.
           </p>
           <a
-            href="mailto:founders@gettashower.com"
+            href="mailto:info@gettashower.com"
             className="inline-flex items-center gap-2 px-8 py-4 bg-[#0066FF] text-white rounded-3xl hover:bg-[#0052CC] transition-colors text-lg"
           >
             <Mail className="w-5 h-5" />
-            founders@gettashower.com
+            info@gettashower.com
           </a>
           <p className="text-sm text-gray-500 mt-6">
             Based in Göteborg or remote-friendly
