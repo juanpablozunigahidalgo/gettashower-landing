@@ -1,3 +1,5 @@
+const LIVE_PROTOTYPE_URL = 'https://www.prototype.gettashower.com/#/explore';
+
 export default function Prototype() {
   return (
     <div className="pt-20 min-h-screen bg-gray-50">
@@ -10,15 +12,31 @@ export default function Prototype() {
           </div>
 
           <h1 className="text-5xl font-bold tracking-tight mb-6">
-            Prototype Coming Soon
+            GettaShower Prototype
           </h1>
 
-          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            This is where the GettaShower interactive prototype will be available.
-            We're currently building the live demo of our urban infrastructure platform.
+          <p className="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
+            This is the prototype page for GettaShower. The interactive prototype
+            of our urban infrastructure platform is available live.
           </p>
 
-          <div className="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm">
+          {/* Prominent link to the live version */}
+          <a
+            href={LIVE_PROTOTYPE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 px-8 py-4 bg-[#0066FF] hover:bg-[#0052cc] text-white text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-[1.02] active:scale-[0.98]"
+          >
+            <span>Open live prototype</span>
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            </svg>
+          </a>
+          <p className="mt-3 text-sm text-gray-500">
+            Opens in a new tab
+          </p>
+
+          <div className="mt-14 bg-white rounded-2xl p-8 border border-gray-200 shadow-sm">
             <h2 className="text-2xl font-bold mb-4">What to expect:</h2>
             <div className="space-y-3 text-left">
               <div className="flex items-start gap-3">
