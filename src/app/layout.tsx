@@ -1,18 +1,14 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import Script from "next/script";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  variable: "--font-app",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -28,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${inter.className} antialiased bg-[#FFFFFF] overflow-x-hidden`}
       >
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-HMSCQJ0N6P"
@@ -43,7 +39,7 @@ export default function RootLayout({
           `}
         </Script>
         <Navigation />
-        <div className="min-h-screen bg-white">
+        <div className="min-h-screen bg-[#FFFFFF] max-w-7xl mx-auto px-8">
           {children}
         </div>
         <Footer />

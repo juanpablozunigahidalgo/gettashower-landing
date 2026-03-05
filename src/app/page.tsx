@@ -5,49 +5,42 @@ import { MapPin } from 'lucide-react';
 export default function Home() {
   return (
     <div className="pt-20">
-      {/* Hero Section */}
-      <section className="min-h-screen flex items-center bg-gradient-to-b from-white to-gray-50 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-6 py-20">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+      {/* Hero Section — 50% texto izquierda, 50% móvil derecha, misma alineación que el resto */}
+      <section className="min-h-[calc(100vh-5rem)] flex items-center bg-[#FFFFFF] overflow-hidden">
+        <div className="w-full py-8 lg:py-10">
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-12 items-center">
 
-            {/* Left: Typography */}
-            <div className="z-10">
-              <h1 className="text-7xl font-bold tracking-tight mb-4 leading-[1.1] text-gray-900">
+            {/* Mitad izquierda: texto */}
+            <div className="z-10 pl-[10%]">
+              <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-3 leading-[1.15] text-[#1A2B70]">
                 Shower & Locker <br />
-                <span className="text-[#0066FF]">Network.</span>
+                Network.
               </h1>
-              <h2 className="text-3xl font-medium text-gray-800 mb-8">
+              <h2 className="text-xl sm:text-2xl font-medium text-[#1A2B70] mb-4">
                 Make the city liveable.
               </h2>
-              <p className="text-xl text-gray-600 leading-relaxed max-w-lg mb-10">
-                Unlock premium gym facilities in seconds. No bookings, no friction—just
-                find your nearest Refresh Node, get directions, and go.
+              <p className="text-base sm:text-lg text-[#4A5F9E] leading-relaxed max-w-lg mb-6">
+              Unlock premium gym and hotel facilities in seconds. No bookings, no friction—just find your nearest Refresh Node, get directions, and go. Take a shower, store your bags, and enjoy the city on your terms.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-3">
                 <Link href="/prototype">
-                  <button className="px-8 py-4 bg-[#0066FF] text-white font-bold rounded-2xl hover:bg-blue-700 transition-all shadow-lg shadow-blue-200">
+                  <button className="px-6 py-3 bg-[#1A2B70] text-white font-bold rounded-xl hover:bg-[#253580] transition-all shadow-lg shadow-[#fffff]/20 text-sm">
                     Prototype
                   </button>
                 </Link>
-                {/* <button className="px-8 py-4 bg-white text-gray-700 border border-gray-200 font-bold rounded-2xl hover:bg-gray-50 transition-all">
-                  How it works
-                </button> */}
               </div>
             </div>
 
-            {/* Right: Mobile App Mockup */}
-            <div className="relative flex justify-center lg:justify-end">
-              {/* Decorative background blur */}
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-blue-100 rounded-full blur-3xl opacity-50 -z-10" />
-
-              <div className="relative z-10 transform hover:scale-105 transition-transform duration-700 ease-out">
+            {/* Mitad derecha: móvil, alineado a la derecha */}
+            <div className="relative flex justify-center lg:justify-end bg-white pr-[10%]">
+              <div className="relative transform hover:scale-[1.02] transition-transform duration-500 ease-out">
                 <Image
-                  src="/Single-Mobil.jpg" // Usa la imagen generada aquí
-                  alt="GettaShower App Discovery Interface"
-                  width={450}
-                  height={900}
-                  className="w-full max-w-[420px] h-auto drop-shadow-[0_35px_35px_rgba(0,102,255,0.15)]"
+                  src="/phone-app.png"
+                  alt="GettaShower App — map with Refresh Nodes in Barcelona"
+                  width={310}
+                  height={620}
+                  className="w-full max-w-[260px] h-auto object-contain"
                   priority
                 />
               </div>
@@ -56,21 +49,48 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Discovery Engine */}
-      <section id="discovery" className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-6">
+      {/* Vision — synthesized */}
+      <section id="vision" className="py-24 bg-[#FFFFFF]">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-4xl sm:text-5xl font-bold tracking-tight mb-6 leading-[1.15] text-[#1A2B70]">
+            Our vision
+          </h2>
+          <p className="text-xl text-[#4A5F9E] leading-relaxed mt-20">
+            We want to transform the city into your home by providing <strong className="text-[#1A2B70]">seamless access</strong> to premium showers and lockers for all citizens. We eliminate urban inefficiencies for commuters, cyclists, tourists, and explorers through <strong className="text-[#1A2B70]">on-demand infrastructure</strong> that allows everyone to live the city on their own terms. By monetizing underutilized, high-quality spaces within gyms and hotels, we turn existing urban assets into a <strong className="text-[#1A2B70]">high-margin marketplace</strong>. This ecosystem incentivizes <strong className="text-[#1A2B70]">sustainable transportation</strong> and maximizes <strong className="text-[#1A2B70]">time efficiency</strong>, empowering everyone to stay at their best—anywhere, at any time.
+          </p>
+        </div>
+      </section>
+
+      {/* Visual Break: Video */}
+      <section className="py-24 bg-[#FFFFFF]">
+        <div className="w-full max-w-5xl mx-auto px-4">
+          <div className="rounded-3xl overflow-hidden shadow-2xl aspect-video bg-black">
+            <iframe
+              src="https://www.youtube.com/embed/aYSAal_miC4?si=MeCFnn6-AhVrdnye"
+              title="GettaShower — Barcelona"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              className="w-full h-full min-h-[400px]"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Discovery Engine — mismo contenedor que layout (consistencia) */}
+      <section id="discovery" className="py-24 bg-[#FFFFFF]">
+        <div className="w-full">
           <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold tracking-tight mb-4">
+            <h2 className="text-4xl sm:text-5xl font-bold tracking-tight mb-4 leading-[1.15] text-[#1A2B70]">
               The Discovery Engine
             </h2>
-            <p className="text-xl text-gray-600">
+            <p className="text-xl text-[#4A5F9E]">
               Real Refresh Nodes across cities and countries
             </p>
           </div>
 
           {/* App Mockup Showcase */}
           <div className="max-w-6xl mx-auto">
-            <div className="bg-gradient-to-br from-gray-50 to-white rounded-3xl p-12 border border-gray-100 shadow-xl">
+            <div className="bg-[#FFFFFF] rounded-3xl p-12">
               <div className="flex flex-col lg:flex-row items-center gap-12">
                 {/* Left: Mobile Mockup */}
                 <div className="flex-shrink-0">
@@ -79,74 +99,59 @@ export default function Home() {
                     alt="GettaShower Discovery Interface"
                     width={350}
                     height={700}
-                    className="w-full max-w-[350px] h-auto drop-shadow-2xl"
+                    className="w-full max-w-[350px] h-auto"
                   />
                 </div>
 
                 {/* Right: Feature Explanation */}
                 <div className="flex-1 space-y-8">
                   <div>
-                    <h3 className="text-3xl font-bold mb-4">Find Premium Nodes Instantly</h3>
-                    <p className="text-lg text-gray-600 leading-relaxed">
+                    <h3 className="text-3xl font-bold mb-4 text-[#1A2B70]">Find Premium Nodes Instantly</h3>
+                    <p className="text-lg text-[#4A5F9E] leading-relaxed">
                       Our map-based discovery shows real-time showers and lockers availability across cities and countries.
                     </p>
                   </div>
 
                   <div className="space-y-4">
                     <div className="flex items-start gap-4">
-                      <div className="w-12 h-12 bg-[#0066FF] rounded-2xl flex items-center justify-center flex-shrink-0">
+                      <div className="w-12 h-12 bg-[#1A2B70] rounded-2xl flex items-center justify-center flex-shrink-0">
                         <span className="text-white font-bold">€8</span>
                       </div>
                       <div>
-                        <div className="font-bold text-lg mb-1">Private Rental Shower</div>
-                        <div className="text-gray-600">Premium facilities with towels and toiletries included</div>
+                        <div className="font-bold text-lg mb-1 text-[#1A2B70]">Private Rental Shower</div>
+                        <div className="text-[#4A5F9E]">Premium facilities with towels and toiletries included</div>
                       </div>
                     </div>
 
                     <div className="flex items-start gap-4">
-                      <div className="w-12 h-12 bg-[#0066FF] rounded-2xl flex items-center justify-center flex-shrink-0">
+                      <div className="w-12 h-12 bg-[#1A2B70] rounded-2xl flex items-center justify-center flex-shrink-0">
                         <span className="text-white font-bold">€3</span>
                       </div>
                       <div>
-                        <div className="font-bold text-lg mb-1">Secure Storage</div>
-                        <div className="text-gray-600">Large lockers for bags and equipment</div>
+                        <div className="font-bold text-lg mb-1 text-[#1A2B70]">Secure Storage</div>
+                        <div className="text-[#4A5F9E]">Large lockers for bags and equipment</div>
                       </div>
                     </div>
 
                     <div className="flex items-start gap-4">
-                      <div className="w-12 h-12 bg-gray-100 rounded-2xl flex items-center justify-center flex-shrink-0">
-                        <MapPin className="w-6 h-6 text-[#0066FF]" />
+                      <div className="w-12 h-12 bg-[#EEF1F8] rounded-2xl flex items-center justify-center flex-shrink-0">
+                        <MapPin className="w-6 h-6 text-[#1A2B70]" />
                       </div>
                       <div>
-                        <div className="font-bold text-lg mb-1">One-Tap Directions</div>
-                        <div className="text-gray-600">Instant navigation to your nearest node</div>
+                        <div className="font-bold text-lg mb-1 text-[#1A2B70]">One-Tap Directions</div>
+                        <div className="text-[#4A5F9E]">Instant navigation to your nearest node</div>
                       </div>
                     </div>
                   </div>
 
-                  <div className="pt-6 border-t border-gray-200">
-                    <p className="text-sm text-gray-500 italic">
+                  <div className="pt-6 border-t border-[#D0D8EB]">
+                    <p className="text-sm text-[#6B7DB8] italic">
                       Live data from Gym Eixample, Beach Center, Gothic Quarter Fitness, and more
                     </p>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Visual Break: Barcelona Scene */}
-      <section className="py-24 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="rounded-3xl overflow-hidden shadow-2xl">
-            <Image
-              src="/Barcelona-City.jpg"
-              alt="Barcelona Urban Architecture"
-              width={1200}
-              height={400}
-              className="w-full h-[400px] object-cover"
-            />
           </div>
         </div>
       </section>

@@ -1,74 +1,83 @@
 const LIVE_PROTOTYPE_URL = 'https://www.prototype.gettashower.com/#/explore';
+const YOUTUBE_SHORTS_ID = 'd1FeOM856Dc';
 
 export default function Prototype() {
   return (
-    <div className="pt-20 min-h-screen bg-gray-50">
-      <div className="max-w-4xl mx-auto px-6 py-20">
-        <div className="text-center">
-          <div className="w-20 h-20 bg-[#0066FF] rounded-2xl flex items-center justify-center mx-auto mb-8">
-            <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
-            </svg>
-          </div>
-
-          <h1 className="text-5xl font-bold tracking-tight mb-6">
-            GettaShower Prototype
-          </h1>
-
-          <p className="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
-            This is the prototype page for GettaShower. The interactive prototype
-            of our urban infrastructure platform is available live.
-          </p>
-
-          {/* Prominent link to the live version */}
-          <a
-            href={LIVE_PROTOTYPE_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 px-8 py-4 bg-[#0066FF] hover:bg-[#0052cc] text-white text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-[1.02] active:scale-[0.98]"
-          >
-            <span>Open live prototype</span>
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-            </svg>
-          </a>
-          <p className="mt-3 text-sm text-gray-500">
-            Opens in a new tab
-          </p>
-
-          <div className="mt-14 bg-white rounded-2xl p-8 border border-gray-200 shadow-sm">
-            <h2 className="text-2xl font-bold mb-4">What to expect:</h2>
-            <div className="space-y-3 text-left">
-              <div className="flex items-start gap-3">
-                <div className="w-2 h-2 rounded-full bg-[#0066FF] mt-2 flex-shrink-0" />
-                <span>Real-time node discovery across Barcelona</span>
+    <div className="pt-20 min-h-screen bg-white overflow-x-hidden min-w-0">
+      {/* Section: Video + botón — mismo ancho que la card de abajo para alineación */}
+      <section className="flex items-center py-5 lg:py-6 bg-[#FFFFFF]">
+        <div className="w-full max-w-4xl mx-auto px-4 sm:px-6 min-w-0">
+          <div className="flex flex-col lg:grid lg:grid-cols-2 items-center gap-5 lg:gap-8 min-w-0 lg:items-stretch">
+            {/* Teléfono alineado a la izquierda (donde empieza la card azul) */}
+            <div className="flex justify-center lg:justify-start items-center w-full">
+              <div className="relative w-full max-w-[160px] sm:max-w-[170px] lg:max-w-[190px]">
+                {/* Phone frame */}
+                <div className="rounded-[1.5rem] overflow-hidden shadow-md border-[6px] border-[#1a1a1a] bg-[#1a1a1a] p-0.5">
+                  <div className="rounded-[1.1rem] overflow-hidden bg-black aspect-[9/19] w-full">
+                    <iframe
+                      src={`https://www.youtube.com/embed/${YOUTUBE_SHORTS_ID}?autoplay=1&mute=1&playsinline=1&loop=1&playlist=${YOUTUBE_SHORTS_ID}`}
+                      title="GettaShower app demo"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
               </div>
-              <div className="flex items-start gap-3">
-                <div className="w-2 h-2 rounded-full bg-[#0066FF] mt-2 flex-shrink-0" />
-                <span>Interactive booking system</span>
-              </div>
-              <div className="flex items-start gap-3">
-                <div className="w-2 h-2 rounded-full bg-[#0066FF] mt-2 flex-shrink-0" />
-                <span>Partner dashboard for gym owners</span>
-              </div>
-              <div className="flex items-start gap-3">
-                <div className="w-2 h-2 rounded-full bg-[#0066FF] mt-2 flex-shrink-0" />
-                <span>Urban mobility simulation</span>
+            </div>
+
+            {/* Desktop: alineado a la derecha (donde termina la card azul). Móvil: centrado */}
+            <div className="flex flex-col justify-center items-center lg:items-end text-center lg:text-right w-full">
+              <a
+                href={LIVE_PROTOTYPE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-[#1A2B70] hover:bg-[#253580] text-white text-base font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-[1.02] active:scale-[0.98]"
+              >
+                <span>Open live prototype</span>
+                <svg className="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
+              <p className="mt-2 text-xs text-[#6B7DB8]">
+                Opens in a new tab
+              </p>
+              {/* Store badges un poco más pequeños */}
+              <div className="flex flex-col sm:flex-row gap-3 mt-5 items-center justify-center lg:justify-end">
+                <a
+                  href="https://play.google.com/store/apps"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block hover:opacity-90 transition-opacity w-fit"
+                  aria-label="Download on Google Play"
+                >
+                  <img src="/google-play-badge.svg" alt="Get it on Google Play" className="h-24 sm:h-28 w-auto object-contain max-w-[240px] sm:max-w-[280px]" />
+                </a>
+                <a
+                  href="https://apps.apple.com/app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block hover:opacity-90 transition-opacity w-fit"
+                  aria-label="Download on the App Store"
+                >
+                  <img src="/app-store-badge.svg" alt="Download on the App Store" className="h-24 sm:h-28 w-auto object-contain max-w-[240px] sm:max-w-[280px]" />
+                </a>
               </div>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div className="mt-8">
-            <p className="text-gray-500">
-              Check back soon or{' '}
-              <a href="/joinus" className="text-[#0066FF] hover:underline font-medium">
-                join our founding team
-              </a>{' '}
-              to help build it.
+      {/* App features — mismo ancho que la sección de arriba para alineación */}
+      <section className="pt-12 sm:pt-16 pb-8 sm:pb-10 bg-[#FFFFFF] min-w-0">
+        <div className="w-full max-w-4xl mx-auto px-4 sm:px-6 min-w-0">
+          <div className="bg-[#1A2B70] rounded-2xl p-6 sm:p-8 text-white text-base sm:text-lg leading-relaxed">
+            <p className="whitespace-pre-line">
+              {`Showers & lockers map search. Premium gym and hotel shower facilities, amenities and price filter. Stripe-integrated payments for users and hosts. Secure transactions. Automatic tax payments. Frictionless QR code user usage, registration, time and payment synchronization. Hosts can register their company and facilities. Usage paid by transaction between users and facilities. Users can review and report facilities. Hosts can review and report users. We are constantly developing! More capabilities coming soon.`}
             </p>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 }

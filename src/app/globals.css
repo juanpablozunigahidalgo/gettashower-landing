@@ -2,13 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom CSS Variables from Figma */
+/* Custom CSS Variables from Figma — GettaShower blue palette */
 :root {
   --font-size: 16px;
+  --brand-primary: #1A2B70;
+  --brand-primary-hover: #253580;
+  /* Azul GettaShower (texto principal) y variante suave para cuerpo/opaco */
+  --gettashower-blue: #1A2B70;
+  --gettashower-blue-soft: #4A5F9E;
+  --gettashower-blue-muted: #6B7DB8;
+  --gettashower-bg-soft: #EEF1F8;
+  --gettashower-border: #D0D8EB;
   --background: #ffffff;
-  --foreground: oklch(0.145 0 0);
+  --foreground: #1A2B70;
   --card: #ffffff;
-  --card-foreground: oklch(0.145 0 0);
+  --card-foreground: #1A2B70;
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
   --primary: #030213;
@@ -16,7 +24,7 @@
   --secondary: oklch(0.95 0.0058 264.53);
   --secondary-foreground: #030213;
   --muted: #ececf0;
-  --muted-foreground: #717182;
+  --muted-foreground: #4A5F9E;
   --accent: #e9ebef;
   --accent-foreground: #030213;
   --destructive: #d4183d;
@@ -87,7 +95,7 @@
 
 @layer base {
   * {
-    @apply border-gray-200;
+    border-color: var(--gettashower-border);
   }
 
   body {
