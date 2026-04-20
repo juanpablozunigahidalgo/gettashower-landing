@@ -12,14 +12,14 @@ export default function Home() {
 
             {/* Mitad izquierda: texto */}
             <div className="z-10 lg:pl-8 xl:pl-12">
-              <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-3 leading-[1.15] text-[#1A2B70]">
-                Shower Network
+              <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-4 leading-[1.15] text-[#1A2B70]">
+                Find a shower in seconds.
               </h1>
               <h2 className="text-xl sm:text-2xl font-medium text-[#1A2B70] mb-4">
                 Make the city liveable.
               </h2>
               <p className="text-base sm:text-lg text-[#4A5F9E] leading-relaxed max-w-lg mb-6">
-                Unlock premium gym and hotel facilities in seconds. No bookings, no friction—just find your nearest Refresh Node, get directions, and go. Take a shower. Save time. Get ready for your next activity. Enjoy the city on your terms.
+                Stay fresh between meetings, workouts, travel, and plans with friends. GettaShower helps you find nearby premium showers and lockers so you save time and keep moving through the city.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3">
