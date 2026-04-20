@@ -13,20 +13,19 @@ export default function Home() {
             {/* Mitad izquierda: texto */}
             <div className="z-10 pl-[10%]">
               <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-3 leading-[1.15] text-[#1A2B70]">
-                Shower & Locker <br />
-                Network.
+                Shower Network
               </h1>
               <h2 className="text-xl sm:text-2xl font-medium text-[#1A2B70] mb-4">
                 Make the city liveable.
               </h2>
               <p className="text-base sm:text-lg text-[#4A5F9E] leading-relaxed max-w-lg mb-6">
-              Unlock premium gym and hotel facilities in seconds. No bookings, no friction—just find your nearest Refresh Node, get directions, and go. Take a shower, store your bags, and enjoy the city on your terms.
+                Unlock premium gym and hotel facilities in seconds. No bookings, no friction—just find your nearest Refresh Node, get directions, and go. Take a shower. Save time. Get ready for your next activity. Enjoy the city on your terms.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3">
-                <Link href="/prototype">
+                <Link href="https://www.prototype.gettashower.com/" target="_blank" rel="noopener noreferrer">
                   <button className="px-6 py-3 bg-[#1A2B70] text-white font-bold rounded-xl hover:bg-[#253580] transition-all shadow-lg shadow-[#fffff]/20 text-sm">
-                    Prototype
+                    Live
                   </button>
                 </Link>
               </div>
@@ -46,18 +45,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Vision — synthesized */}
-      <section id="vision" className="py-24 bg-[#FFFFFF]">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-4xl sm:text-5xl font-bold tracking-tight mb-6 leading-[1.15] text-[#1A2B70]">
-            Our vision
-          </h2>
-          <p className="text-xl text-[#4A5F9E] leading-relaxed mt-20">
-            We want to transform the city into your home by providing <strong className="text-[#1A2B70]">seamless access</strong> to premium showers and lockers for all citizens. We eliminate urban inefficiencies for commuters, cyclists, tourists, and explorers through <strong className="text-[#1A2B70]">on-demand infrastructure</strong> that allows everyone to live the city on their own terms. By monetizing underutilized, high-quality spaces within gyms and hotels, we turn existing urban assets into a <strong className="text-[#1A2B70]">high-margin marketplace</strong>. This ecosystem incentivizes <strong className="text-[#1A2B70]">sustainable transportation</strong> and maximizes <strong className="text-[#1A2B70]">time efficiency</strong>, empowering everyone to stay at their best—anywhere, at any time.
-          </p>
         </div>
       </section>
 

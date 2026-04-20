@@ -24,7 +24,7 @@ export function Footer() {
             <h4 className="font-semibold mb-4 text-white">Organization</h4>
             <div className="space-y-2">
               <Link href="/" className="block text-white hover:opacity-90 transition-opacity">Home</Link>
-              <Link href="/prototype" className="block text-white hover:opacity-90 transition-opacity">Prototype</Link>
+              <Link href="/getapp" className="block text-white hover:opacity-90 transition-opacity">Get the App</Link>
             </div>
           </div>
 
