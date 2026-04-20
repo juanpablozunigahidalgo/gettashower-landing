@@ -7,11 +7,11 @@ export default function Home() {
     <div className="pt-20">
       {/* Hero Section — 50% texto izquierda, 50% móvil derecha, misma alineación que el resto */}
       <section className="min-h-[calc(100vh-5rem)] flex items-center bg-[#FFFFFF] overflow-hidden">
-        <div className="w-full py-8 lg:py-10">
+        <div className="w-full py-8 lg:py-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-10 lg:gap-12 items-center">
 
             {/* Mitad izquierda: texto */}
-            <div className="z-10 pl-[10%]">
+            <div className="z-10 lg:pl-8 xl:pl-12">
               <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-3 leading-[1.15] text-[#1A2B70]">
                 Shower Network
               </h1>
@@ -32,7 +32,7 @@ export default function Home() {
             </div>
 
             {/* Mitad derecha: móvil, alineado a la derecha */}
-            <div className="relative flex justify-center lg:justify-end bg-white pr-[10%]">
+            <div className="relative flex justify-center lg:justify-end bg-white lg:pr-8 xl:pr-12">
               <div className="relative transform hover:scale-[1.02] transition-transform duration-500 ease-out">
                 <Image
                   src="/phone-app.png"
@@ -49,7 +49,7 @@ export default function Home() {
       </section>
 
       {/* Visual Break: Video */}
-      <section className="py-24 bg-[#FFFFFF]">
+      <section className="py-16 sm:py-24 bg-[#FFFFFF]">
         <div className="w-full max-w-5xl mx-auto px-4">
           <div className="rounded-3xl overflow-hidden shadow-2xl aspect-video bg-black">
             <iframe
@@ -57,7 +57,7 @@ export default function Home() {
               title="GettaShower — Barcelona"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
-              className="w-full h-full min-h-[400px]"
+              className="w-full h-full min-h-[220px] sm:min-h-[320px] md:min-h-[400px]"
             />
           </div>
         </div>
@@ -65,7 +65,7 @@ export default function Home() {
 
       {/* Discovery Engine — mismo contenedor que layout (consistencia) */}
       <section id="discovery" className="py-24 bg-[#FFFFFF]">
-        <div className="w-full">
+        <div className="w-full px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl sm:text-5xl font-bold tracking-tight mb-4 leading-[1.15] text-[#1A2B70]">
               The Discovery Engine
@@ -77,8 +77,8 @@ export default function Home() {
 
           {/* App Mockup Showcase */}
           <div className="max-w-6xl mx-auto">
-            <div className="bg-[#FFFFFF] rounded-3xl p-12">
-              <div className="flex flex-col lg:flex-row items-center gap-12">
+            <div className="bg-[#FFFFFF] rounded-3xl p-5 sm:p-8 lg:p-12">
+              <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
                 {/* Left: Mobile Mockup */}
                 <div className="flex-shrink-0">
                   <Image
@@ -86,14 +86,14 @@ export default function Home() {
                     alt="GettaShower Discovery Interface"
                     width={350}
                     height={700}
-                    className="w-full max-w-[350px] h-auto"
+                    className="w-full max-w-[260px] sm:max-w-[320px] lg:max-w-[350px] h-auto"
                   />
                 </div>
 
                 {/* Right: Feature Explanation */}
                 <div className="flex-1 space-y-8">
                   <div>
-                    <h3 className="text-3xl font-bold mb-4 text-[#1A2B70]">Find Premium Nodes Instantly</h3>
+                    <h3 className="text-2xl sm:text-3xl font-bold mb-4 text-[#1A2B70]">Find Premium Nodes Instantly</h3>
                     <p className="text-lg text-[#4A5F9E] leading-relaxed">
                       Our map-based discovery shows real-time showers and lockers availability across cities and countries.
                     </p>

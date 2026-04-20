@@ -21,15 +21,15 @@ export default function GetApp() {
     <div className="pt-20 min-h-screen bg-white overflow-x-hidden min-w-0">
       {/* Hero: download first */}
       <section className="min-h-[calc(100vh-5rem)] flex items-center bg-[#FFFFFF] overflow-hidden">
-        <div className="w-full py-8 lg:py-10">
+        <div className="w-full py-8 lg:py-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-10 lg:gap-12 items-center">
-            <div className="relative flex justify-center lg:justify-start bg-white pl-[10%]">
+            <div className="relative flex justify-center lg:justify-start bg-white lg:pl-8 xl:pl-12">
               <div className="w-full max-w-[260px]">
                 <VideoDragCarousel videos={HERO_VIDEOS} />
               </div>
             </div>
 
-            <div className="z-10 pr-[10%] pl-6">
+            <div className="z-10 lg:pr-8 xl:pr-12">
               <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-4 leading-[1.15] text-[#1A2B70]">
                 Find a shower in seconds.
               </h1>
@@ -44,7 +44,7 @@ export default function GetApp() {
                   className="inline-block hover:opacity-90 transition-opacity w-fit"
                   aria-label="Download on Google Play"
                 >
-                  <img src="/google-play-badge.svg" alt="Get it on Google Play" className="h-24 sm:h-28 w-auto object-contain max-w-[240px] sm:max-w-[280px]" />
+                  <img src="/google-play-badge.svg" alt="Get it on Google Play" className="h-14 sm:h-20 md:h-24 w-auto object-contain max-w-[190px] sm:max-w-[240px] md:max-w-[280px]" />
                 </a>
                 <a
                   href="https://apps.apple.com/app"
@@ -53,7 +53,7 @@ export default function GetApp() {
                   className="inline-block hover:opacity-90 transition-opacity w-fit"
                   aria-label="Download on the App Store"
                 >
-                  <img src="/app-store-badge.svg" alt="Download on the App Store" className="h-24 sm:h-28 w-auto object-contain max-w-[240px] sm:max-w-[280px]" />
+                  <img src="/app-store-badge.svg" alt="Download on the App Store" className="h-14 sm:h-20 md:h-24 w-auto object-contain max-w-[190px] sm:max-w-[240px] md:max-w-[280px]" />
                 </a>
               </div>
             </div>
@@ -149,7 +149,7 @@ export default function GetApp() {
               className="inline-block hover:opacity-90 transition-opacity w-fit"
               aria-label="Download on Google Play"
             >
-              <img src="/google-play-badge.svg" alt="Get it on Google Play" className="h-24 sm:h-28 w-auto object-contain max-w-[240px] sm:max-w-[280px]" />
+              <img src="/google-play-badge.svg" alt="Get it on Google Play" className="h-14 sm:h-20 md:h-24 w-auto object-contain max-w-[190px] sm:max-w-[240px] md:max-w-[280px]" />
             </a>
             <a
               href="https://apps.apple.com/app"
@@ -158,7 +158,7 @@ export default function GetApp() {
               className="inline-block hover:opacity-90 transition-opacity w-fit"
               aria-label="Download on the App Store"
             >
-              <img src="/app-store-badge.svg" alt="Download on the App Store" className="h-24 sm:h-28 w-auto object-contain max-w-[240px] sm:max-w-[280px]" />
+              <img src="/app-store-badge.svg" alt="Download on the App Store" className="h-14 sm:h-20 md:h-24 w-auto object-contain max-w-[190px] sm:max-w-[240px] md:max-w-[280px]" />
             </a>
           </div>
         </div>
