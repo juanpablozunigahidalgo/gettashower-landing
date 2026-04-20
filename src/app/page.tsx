@@ -19,7 +19,7 @@ export default function Home() {
                 Make the city liveable.
               </h2>
               <p className="text-base sm:text-lg text-[#4A5F9E] leading-relaxed max-w-lg mb-6">
-                Stay fresh between meetings, workouts, travel, and plans with friends. GettaShower helps you find nearby premium showers and lockers so you save time and keep moving through the city.
+                Stay fresh between meetings, workouts, travel, and plans with friends. GettaShower helps you find nearby premium showers so you save time and keep moving to the next activity. Enjoy the city on your own terms.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3">
