@@ -30,7 +30,7 @@ export function Navigation() {
 
           <div className="hidden sm:flex items-center gap-2 sm:gap-3">
             <Link
-              href="#"
+              href="/host"
               className="inline-flex items-center justify-center px-3 py-2 sm:px-5 sm:py-2.5 bg-[#1A2B70] text-white font-bold rounded-lg sm:rounded-xl hover:bg-[#253580] transition-all shadow-lg shadow-[#fffff]/20 text-xs sm:text-sm whitespace-nowrap"
             >
               Become a Host
@@ -59,7 +59,7 @@ export function Navigation() {
         {isMobileMenuOpen && (
           <div className="sm:hidden mt-3 pb-1 flex flex-col gap-2 border-t border-[#D0D8EB] pt-3">
             <Link
-              href="#"
+              href="/host"
               onClick={closeMobileMenu}
               className="inline-flex items-center justify-center px-4 py-2.5 bg-[#1A2B70] text-white font-bold rounded-lg text-sm"
             >

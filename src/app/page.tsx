@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { MapPin } from 'lucide-react';
+import { MapPin, QrCode } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -48,21 +48,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Visual Break: Video */}
-      <section className="py-16 sm:py-24 bg-[#FFFFFF]">
-        <div className="w-full max-w-5xl mx-auto px-4">
-          <div className="rounded-3xl overflow-hidden shadow-2xl aspect-video bg-black">
-            <iframe
-              src="https://www.youtube.com/embed/aYSAal_miC4?si=MeCFnn6-AhVrdnye"
-              title="GettaShower — Barcelona"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-              className="w-full h-full min-h-[220px] sm:min-h-[320px] md:min-h-[400px]"
-            />
-          </div>
-        </div>
-      </section>
-
       {/* Discovery Engine — mismo contenedor que layout (consistencia) */}
       <section id="discovery" className="py-24 bg-[#FFFFFF]">
         <div className="w-full px-4 sm:px-6 lg:px-8">
@@ -102,43 +87,53 @@ export default function Home() {
                   <div className="space-y-4">
                     <div className="flex items-start gap-4">
                       <div className="w-12 h-12 bg-[#1A2B70] rounded-2xl flex items-center justify-center flex-shrink-0">
-                        <span className="text-white font-bold">€8</span>
+                        <span className="text-white font-bold">€10</span>
                       </div>
                       <div>
                         <div className="font-bold text-lg mb-1 text-[#1A2B70]">Private Rental Shower</div>
-                        <div className="text-[#4A5F9E]">Premium facilities with towels and toiletries included</div>
+                        <div className="text-[#4A5F9E]">Premium shower facility. Gym, Hostel, Hotel. Towels and toiletries optional.</div>
                       </div>
                     </div>
 
                     <div className="flex items-start gap-4">
                       <div className="w-12 h-12 bg-[#1A2B70] rounded-2xl flex items-center justify-center flex-shrink-0">
-                        <span className="text-white font-bold">€3</span>
-                      </div>
-                      <div>
-                        <div className="font-bold text-lg mb-1 text-[#1A2B70]">Secure Storage</div>
-                        <div className="text-[#4A5F9E]">Large lockers for bags and equipment</div>
-                      </div>
-                    </div>
-
-                    <div className="flex items-start gap-4">
-                      <div className="w-12 h-12 bg-[#EEF1F8] rounded-2xl flex items-center justify-center flex-shrink-0">
-                        <MapPin className="w-6 h-6 text-[#1A2B70]" />
+                        <MapPin className="w-6 h-6 text-white" />
                       </div>
                       <div>
                         <div className="font-bold text-lg mb-1 text-[#1A2B70]">One-Tap Directions</div>
                         <div className="text-[#4A5F9E]">Instant navigation to your nearest node</div>
                       </div>
                     </div>
+
+                    <div className="flex items-start gap-4">
+                      <div className="w-12 h-12 bg-[#1A2B70] rounded-2xl flex items-center justify-center flex-shrink-0">
+                        <QrCode className="w-6 h-6 text-white" />
+                      </div>
+                      <div>
+                        <div className="font-bold text-lg mb-1 text-[#1A2B70]">Friction Less Payment</div>
+                        <div className="text-[#4A5F9E]">No bookings. Just nearest node. Refresh any time.</div>
+                      </div>
+                    </div>
                   </div>
 
-                  <div className="pt-6 border-t border-[#D0D8EB]">
-                    <p className="text-sm text-[#6B7DB8] italic">
-                      Live data from Gym Eixample, Beach Center, Gothic Quarter Fitness, and more
-                    </p>
-                  </div>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Visual Break: Video */}
+      <section className="py-16 sm:py-24 bg-[#FFFFFF]">
+        <div className="w-full max-w-5xl mx-auto px-4">
+          <div className="rounded-3xl overflow-hidden shadow-2xl aspect-video bg-black">
+            <iframe
+              src="https://www.youtube.com/embed/aYSAal_miC4?si=MeCFnn6-AhVrdnye"
+              title="GettaShower — Barcelona"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              className="w-full h-full min-h-[220px] sm:min-h-[320px] md:min-h-[400px]"
+            />
           </div>
         </div>
       </section>
