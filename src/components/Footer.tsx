@@ -76,8 +76,8 @@ export function Footer() {
             © 2026 GettaShower. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="text-white hover:opacity-90 text-sm transition-opacity">Privacy Policy</a>
-            <a href="#" className="text-white hover:opacity-90 text-sm transition-opacity">Terms of Service</a>
+            <Link href="/privacy-policy" className="text-white hover:opacity-90 text-sm transition-opacity">Privacy Policy</Link>
+            <Link href="/terms-of-service-eu" className="text-white hover:opacity-90 text-sm transition-opacity">Terms of Service</Link>
           </div>
         </div>
       </div>
