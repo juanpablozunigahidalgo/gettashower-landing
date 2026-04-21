@@ -5,13 +5,28 @@ const LIVE_PROTOTYPE_URL = 'https://www.prototype.gettashower.com/#/explore';
 const YOUTUBE_SHORTS_ID = 'd1FeOM856Dc';
 const HERO_VIDEOS = [
   {
-    id: 'app-demo-short',
-    title: 'GettaShower app short demo',
+    id: 'tiktok-first',
+    title: 'GettaShower TikTok demo 1',
+    embedUrl: 'https://www.tiktok.com/player/v1/7630503253024787734?description=0&music_info=0&controls=1',
+  },
+  {
+    id: 'app-exploration-reel',
+    title: 'GettaShower app exploration reel',
     embedUrl: `https://www.youtube.com/embed/${YOUTUBE_SHORTS_ID}?autoplay=1&mute=1&playsinline=1&loop=1&playlist=${YOUTUBE_SHORTS_ID}`,
   },
   {
-    id: 'barcelona-demo',
-    title: 'GettaShower Barcelona demo',
+    id: 'tiktok-second',
+    title: 'GettaShower TikTok demo 2',
+    embedUrl: 'https://www.tiktok.com/player/v1/7631205489241591062?description=0&music_info=0&controls=1',
+  },
+  {
+    id: 'tiktok-third',
+    title: 'GettaShower TikTok demo 3',
+    embedUrl: 'https://www.tiktok.com/player/v1/7631211758320897302?description=0&music_info=0&controls=1',
+  },
+  {
+    id: 'helena-youtube',
+    title: 'Helena GettaShower video',
     embedUrl: 'https://www.youtube.com/embed/aYSAal_miC4?autoplay=1&mute=1&playsinline=1',
   },
 ];
