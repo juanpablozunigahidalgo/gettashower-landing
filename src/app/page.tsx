@@ -23,7 +23,7 @@ export default function Home() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3">
-                <Link href="https://www.prototype.gettashower.com/" target="_blank" rel="noopener noreferrer">
+                <Link href="https://www.live.gettashower.com/" target="_blank" rel="noopener noreferrer">
                   <button className="px-6 py-3 bg-[#1A2B70] text-white font-bold rounded-xl hover:bg-[#253580] transition-all shadow-lg shadow-[#fffff]/20 text-sm">
                     Live
                   </button>
