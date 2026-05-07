@@ -12,6 +12,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.gettashower.com"),
   title: "GettaShower - Global shower and locker network",
   description: "Make the city liveable with our global shower and locker network",
 };

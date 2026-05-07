@@ -6,6 +6,8 @@ import type { ReactNode } from "react";
 type LegalDocumentPageProps = {
   title: string;
   documentPath: string;
+  /** Rendered below the document body (e.g. cross-links to related legal pages). */
+  afterArticle?: ReactNode;
 };
 
 function renderInline(text: string): ReactNode[] {
@@ -50,7 +52,7 @@ function renderInline(text: string): ReactNode[] {
     });
 }
 
-export async function LegalDocumentPage({ title, documentPath }: LegalDocumentPageProps) {
+export async function LegalDocumentPage({ title, documentPath, afterArticle }: LegalDocumentPageProps) {
   const absolutePath = path.join(process.cwd(), documentPath);
   const markdown = await fs.readFile(absolutePath, "utf-8");
   const lines = markdown.split(/\r?\n/);
@@ -165,6 +167,7 @@ export async function LegalDocumentPage({ title, documentPath }: LegalDocumentPa
             <h1 className="mt-4 text-3xl sm:text-4xl font-bold tracking-tight text-[#1A2B70]">{title}</h1>
           </div>
           <article className="space-y-5">{blocks}</article>
+          {afterArticle ? <div className="mt-10 pt-8 border-t border-[#D0D8EB]">{afterArticle}</div> : null}
         </div>
       </div>
     </main>
