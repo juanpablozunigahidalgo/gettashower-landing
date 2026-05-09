@@ -54,7 +54,7 @@ export function Footer() {
           </div>
 
           {/* Contact */}
-          <div>
+          <div id="contact" className="scroll-mt-24">
             <h4 className="font-semibold mb-4 text-white">Contact</h4>
             <div className="space-y-3">
               <a href="mailto:info@gettashower.com" className="flex items-center gap-2 text-white hover:opacity-90 transition-opacity">

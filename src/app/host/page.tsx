@@ -1,6 +1,7 @@
 'use client';
 
 import { useMemo, useState } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import {
   ArrowRight,
@@ -38,103 +39,160 @@ export default function HostPage() {
 
   return (
     <div className="pt-20 bg-[#FFFFFF]">
-      <section className="py-14 sm:py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-start">
-            <div>
-              <div className="inline-flex items-center px-3 py-1 rounded-full bg-[#EEF1F8] text-[#1A2B70] text-xs sm:text-sm font-semibold mb-5">
+      <section className="min-h-[calc(100vh-5rem)] flex items-center bg-[#FFFFFF] overflow-hidden">
+        <div className="w-full py-8 lg:py-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-x-16 xl:gap-x-24 lg:gap-y-12 items-center">
+
+            <div className="z-10 lg:pl-8 xl:pl-12">
+              <div className="inline-flex items-center px-3 py-1 rounded-full bg-[#EEF1F8] text-[#1A2B70] text-xs sm:text-sm font-semibold mb-4">
                 For gyms, hostels, hotels and sport facilities
               </div>
-              <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-[#1A2B70] leading-[1.1] mb-5">
-                Turn underused showers into recurring revenue.
+              <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-4 leading-[1.15] text-[#1A2B70]">
+                Your showers, recurring revenue.
               </h1>
-              <p className="text-base sm:text-lg text-[#4A5F9E] leading-relaxed max-w-xl mb-7">
-                GettaShower helps hosts monetize existing shower capacity with low operational friction.
-                We drive demand from tourists and city users who need to refresh now, then help you convert
-                that demand into predictable monthly income.
+              <p className="text-base sm:text-lg text-[#4A5F9E] leading-relaxed max-w-lg mb-6">
+                Over 2 billion people live in high density cities. Imagine how many of them need a shower on the go.
+                GettaShower turns your unused shower facilities into income. We bring you tourists and city dwellers
+                who need to refresh. They get a shower. You make money. It&rsquo;s that simple.
               </p>
 
-              <div className="grid sm:grid-cols-2 gap-4">
-                <div className="rounded-2xl border border-[#D0D8EB] p-4 bg-white">
-                  <div className="text-2xl font-extrabold text-[#1A2B70] mb-1">747M</div>
-                  <p className="text-sm text-[#4A5F9E]">International tourist arrivals in Europe in 2024.</p>
-                </div>
-                <div className="rounded-2xl border border-[#D0D8EB] p-4 bg-white">
-                  <div className="text-2xl font-extrabold text-[#1A2B70] mb-1">3.0B+</div>
-                  <p className="text-sm text-[#4A5F9E]">Tourist accommodation nights in the EU in 2024.</p>
-                </div>
+              <div className="flex flex-col sm:flex-row gap-3">
+                <Link href="#simulator">
+                  <button className="px-6 py-3 bg-[#1A2B70] text-white font-bold rounded-xl hover:bg-[#253580] transition-all shadow-lg shadow-[#fffff]/20 text-sm">
+                    Simulate revenue
+                  </button>
+                </Link>
+                <Link href="#contact">
+                  <button className="px-6 py-3 border border-[#1A2B70] text-[#1A2B70] font-bold rounded-xl hover:bg-[#EEF1F8] transition-all text-sm">
+                    Talk to our team
+                  </button>
+                </Link>
               </div>
             </div>
 
-            <div className="rounded-3xl bg-[#F6F8FE] border border-[#D0D8EB] p-6 sm:p-8">
-              <h2 className="text-2xl sm:text-3xl font-bold text-[#1A2B70] mb-2">Host revenue simulator</h2>
-              <p className="text-sm sm:text-base text-[#4A5F9E] mb-6">
-                Hosts keep <span className="font-bold text-[#1A2B70]">70%</span> of each completed shower.
-                Set your assumptions and estimate your monthly host revenue.
-              </p>
+            <div className="relative flex justify-center lg:justify-end lg:items-center bg-white lg:pl-6 xl:pl-10 lg:pr-4 xl:pr-16 min-h-0 shrink-0">
+              <div className="relative transform hover:scale-[1.02] transition-transform duration-500 ease-out lg:translate-x-1 xl:translate-x-2">
+                <Image
+                  src="/host-hero.png"
+                  alt="Host using the GettaShower app to manage shower revenue"
+                  width={520}
+                  height={620}
+                  className="w-full max-w-[320px] sm:max-w-[360px] lg:max-w-[400px] xl:max-w-[440px] h-auto object-contain"
+                  priority
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-              <div className="space-y-5">
+      <section id="simulator" className="py-16 sm:py-24 bg-[#FFFFFF]">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl sm:text-5xl font-bold tracking-tight mb-4 leading-[1.15] text-[#1A2B70]">
+              Simulate your host revenue
+            </h2>
+            <p className="text-lg sm:text-xl text-[#4A5F9E]">
+              See what your shower capacity could earn each month.
+            </p>
+          </div>
+
+          <div className="rounded-3xl bg-[#F6F8FE] border border-[#D0D8EB] p-6 sm:p-8">
+            <p className="text-sm sm:text-base text-[#4A5F9E] mb-6">
+              Hosts keep <span className="font-bold text-[#1A2B70]">70%</span> of each completed shower.
+              Set your assumptions and estimate your monthly host revenue.
+            </p>
+
+            <div className="space-y-5">
+              <div>
+                <div className="flex items-center justify-between mb-2">
+                  <label htmlFor="showersRange" className="text-sm font-semibold text-[#1A2B70]">
+                    Showers per day
+                  </label>
+                  <span className="text-sm font-bold text-[#1A2B70]">{showersPerDay}</span>
+                </div>
+                <input
+                  id="showersRange"
+                  type="range"
+                  min={1}
+                  max={12}
+                  value={showersPerDay}
+                  onChange={(event) => setShowersPerDay(Number(event.target.value))}
+                  className="w-full accent-[#1A2B70]"
+                />
+              </div>
+
+              <div className="grid sm:grid-cols-2 gap-4">
                 <div>
-                  <div className="flex items-center justify-between mb-2">
-                    <label htmlFor="showersRange" className="text-sm font-semibold text-[#1A2B70]">
-                      Showers per day
-                    </label>
-                    <span className="text-sm font-bold text-[#1A2B70]">{showersPerDay}</span>
-                  </div>
+                  <label htmlFor="pricePerShower" className="block text-sm font-semibold text-[#1A2B70] mb-2">
+                    Price per shower (EUR)
+                  </label>
                   <input
-                    id="showersRange"
-                    type="range"
-                    min={1}
-                    max={120}
-                    value={showersPerDay}
-                    onChange={(event) => setShowersPerDay(Number(event.target.value))}
-                    className="w-full accent-[#1A2B70]"
+                    id="pricePerShower"
+                    type="number"
+                    min={3}
+                    max={50}
+                    value={pricePerShower}
+                    onChange={(event) => setPricePerShower(Number(event.target.value) || 0)}
+                    className="w-full border border-[#D0D8EB] rounded-xl px-3 py-2 text-[#1A2B70] font-medium focus:outline-none focus:ring-2 focus:ring-[#1A2B70]/30"
                   />
                 </div>
 
-                <div className="grid sm:grid-cols-2 gap-4">
-                  <div>
-                    <label htmlFor="pricePerShower" className="block text-sm font-semibold text-[#1A2B70] mb-2">
-                      Price per shower (EUR)
-                    </label>
-                    <input
-                      id="pricePerShower"
-                      type="number"
-                      min={3}
-                      max={50}
-                      value={pricePerShower}
-                      onChange={(event) => setPricePerShower(Number(event.target.value) || 0)}
-                      className="w-full border border-[#D0D8EB] rounded-xl px-3 py-2 text-[#1A2B70] font-medium focus:outline-none focus:ring-2 focus:ring-[#1A2B70]/30"
-                    />
-                  </div>
-
-                  <div>
-                    <label htmlFor="daysOpenPerWeek" className="block text-sm font-semibold text-[#1A2B70] mb-2">
-                      Days open per week
-                    </label>
-                    <input
-                      id="daysOpenPerWeek"
-                      type="number"
-                      min={1}
-                      max={7}
-                      value={daysOpenPerWeek}
-                      onChange={(event) => setDaysOpenPerWeek(Number(event.target.value) || 0)}
-                      className="w-full border border-[#D0D8EB] rounded-xl px-3 py-2 text-[#1A2B70] font-medium focus:outline-none focus:ring-2 focus:ring-[#1A2B70]/30"
-                    />
-                  </div>
+                <div>
+                  <label htmlFor="daysOpenPerWeek" className="block text-sm font-semibold text-[#1A2B70] mb-2">
+                    Days open per week
+                  </label>
+                  <input
+                    id="daysOpenPerWeek"
+                    type="number"
+                    min={1}
+                    max={7}
+                    value={daysOpenPerWeek}
+                    onChange={(event) => setDaysOpenPerWeek(Number(event.target.value) || 0)}
+                    className="w-full border border-[#D0D8EB] rounded-xl px-3 py-2 text-[#1A2B70] font-medium focus:outline-none focus:ring-2 focus:ring-[#1A2B70]/30"
+                  />
                 </div>
-
-                <div className="rounded-2xl bg-[#1A2B70] text-white p-5">
-                  <p className="text-sm text-white/85 mb-1">Estimated monthly host revenue</p>
-                  <p className="text-3xl sm:text-4xl font-extrabold mb-2">{formattedMonthlyRevenue}</p>
-                  <p className="text-sm text-white/85">Estimated yearly host revenue: {formattedAnnualRevenue}</p>
-                </div>
-
-                <p className="text-xs text-[#6B7DB8]">
-                  Split policy per completed shower: 70% host, 20% platform, 10% growth channel.
-                  Revenue output above shows host share only.
-                </p>
               </div>
+
+              <div className="grid sm:grid-cols-5 gap-4">
+                <div
+                  suppressHydrationWarning
+                  className="sm:col-span-2 relative rounded-2xl text-white p-6 shadow-md ring-1 ring-white/10 overflow-hidden"
+                  style={{
+                    backgroundImage:
+                      'linear-gradient(135deg, #4A5F9E 0%, #6B7DB8 100%)',
+                  }}
+                >
+                  <p className="text-xs uppercase tracking-wide text-white/85 font-bold mb-1">Per month</p>
+                  <p className="text-sm text-white/80 mb-3">Estimated host revenue</p>
+                  <p className="text-3xl sm:text-4xl font-extrabold tracking-tight leading-none text-white">{formattedMonthlyRevenue}</p>
+                </div>
+
+                <div
+                  suppressHydrationWarning
+                  className="sm:col-span-3 relative rounded-2xl text-white p-6 shadow-xl ring-1 ring-white/10 overflow-hidden"
+                  style={{
+                    backgroundImage:
+                      'linear-gradient(135deg, #1A2B70 0%, #2C3F8F 100%)',
+                  }}
+                >
+                  <div
+                    suppressHydrationWarning
+                    className="absolute top-3 right-3 inline-flex items-center px-2.5 py-1 rounded-full bg-white/15 text-[10px] uppercase tracking-wide font-bold text-white"
+                  >
+                    Yearly potential
+                  </div>
+                  <p className="text-xs uppercase tracking-wide text-white/80 font-bold mb-1">Per year</p>
+                  <p className="text-sm text-white/85 mb-3">Estimated host revenue</p>
+                  <p className="text-4xl sm:text-5xl font-extrabold tracking-tight leading-none mb-2">{formattedAnnualRevenue}</p>
+                  <p className="text-xs text-white/70">{`Based on 12 x ${formattedMonthlyRevenue}/month`}</p>
+                </div>
+              </div>
+
+              <p className="text-xs text-[#6B7DB8]">
+                Split policy per completed shower: 70% host, 20% platform, 10% growth channel.
+                Revenue output above shows host share only.
+              </p>
             </div>
           </div>
         </div>
@@ -217,7 +275,7 @@ export default function HostPage() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
             <Link
-              href="mailto:info@gettashower.com?subject=Become%20a%20Host"
+              href="#contact"
               className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-white text-[#1A2B70] font-bold hover:opacity-90 transition-opacity"
             >
               Talk to our team
